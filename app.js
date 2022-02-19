@@ -7,7 +7,6 @@ dotenv.config({
   path: './config.env'
 })
 var app = express();
-
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -61,6 +60,8 @@ app.use(function (err, req, res, next) {
   res.status(400).json({ err });
 });
 
-app.listen(8000, () => console.log("server listening at 8080"));
+app.listen(8000, () => console.log("server listening at 8000"));
 
 module.exports = app;
+
+// hello from wsl
