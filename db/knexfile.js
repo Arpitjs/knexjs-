@@ -9,7 +9,7 @@ module.exports = {
     connection: {
       database: "arpit",
       user: "postgres",
-      password: 'okcomputer387#',
+      password: process.env.PASSWORD,
     },
     pool: {
       min: 2,
