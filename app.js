@@ -21,10 +21,9 @@ app.get("/todos", (req, res) => {
       res.json(todos);
     });
 });
-
 app.get("/users", async (req, res) => {
   const result = await knex.select().from("users");
-  res.status(201).json(result);
+  res.status(200).json(result);
 });
 
 app.post("/users", async (req, res) => {
@@ -63,5 +62,3 @@ app.use(function (err, req, res, next) {
 app.listen(8000, () => console.log("server listening at 8000"));
 
 module.exports = app;
-
-// hello from wsl!!

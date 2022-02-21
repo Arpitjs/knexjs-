@@ -5,18 +5,13 @@
  */
 module.exports = {
   development: {
-    client: "postgresql",
+    client: "mysql2",
     connection: {
-      database: "arpit",
-      user: "postgres",
-      password: 'okcomputer387#',
-    },
-    pool: {
-      min: 2,
-      max: 10,
-    },
-    migrations: {
-      tableName: "knex_migrations",
-    },
-  },
+      host : '127.0.0.1',
+      port : 3306,
+      user : 'root',
+      password : 'okcomputer387#',
+      database : 'arpit'
+    }
+  }
 };
